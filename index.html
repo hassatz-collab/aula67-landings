@@ -144,7 +144,7 @@ footer{background:var(--ink);color:#ffffffbb;font-size:14px;padding:34px 0 90px}
 .tg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
 .msg{background:#fff;border:3px solid var(--ink);border-radius:18px 18px 18px 4px;padding:16px 18px;box-shadow:5px 5px 0 var(--ink);font-size:17px}
 .msg small{display:block;margin-top:8px;font-weight:600;color:var(--wine);font-size:14px}
-.faq summary{font:700 17px/1.1 var(--f-d)}
+.faq summary{font:500 20px/1.0 var(--f-d)}
 .faq p,.faq li{font-size:18px}.faq p{max-width:760px}.faq ul{margin:10px 0 0;padding-left:22px;max-width:760px}
 .faq h4{font:700 17px var(--f-b);margin:16px 0 4px;color:var(--wine)}
 .bib{font-size:15px!important;opacity:.85}
@@ -161,7 +161,7 @@ nav .btn{padding:13px 26px;font-size:18px;background:var(--blue);color:#fff;box-
 .th{font:800 28px var(--f-d);margin:30px 0 16px}
 .msg.wa1{background:#DCF8C6;border-radius:18px 18px 4px 18px}.msg.fb{background:#fff}.msg.fb b{display:block;color:var(--blue);margin-bottom:6px;font-size:17px}
 .faq details{border:3px solid var(--ink)!important;border-radius:20px;margin-bottom:16px;padding:0;box-shadow:7px 7px 0 var(--ink);overflow:hidden;background:#fff}
-.faq summary{padding:16px 18px;align-items:center;gap:12px}.faq summary i{font-style:normal;font-size:20px;margin-right:2px}.faq summary::after{margin-left:auto;font-size:25px}
+.faq summary{padding:18px 20px;align-items:center;gap:15px}.faq summary i{font-style:normal;font-size:20px;margin-right:2px}.faq summary::after{margin-left:auto;font-size:25px}
 .fa{padding:4px 26px 26px}.faq .fa p{margin-top:8px}
 .f1{background:var(--lilac)!important}.f2{background:var(--sun)!important}.f3{background:var(--sage)!important}.f4{background:var(--pink)!important}.f5,.f9{background:#BFE3FF!important}.f6,.f8{background:#FFD9B3!important}.f7{background:var(--lilac)!important}
 .chs{display:flex;flex-wrap:wrap;gap:10px}.ch{font:600 15px/1.25 var(--f-b);padding:9px 15px;border:2.5px solid var(--ink);border-radius:99px;background:#fff;box-shadow:3px 3px 0 var(--ink)}
@@ -179,7 +179,7 @@ nav .btn{background:var(--sun)!important;color:var(--ink)!important;font-weight:
 .bar{background:var(--ink)!important;color:#fff!important}.bar .btn{background:var(--sun)!important;color:var(--ink)!important;font-weight:800}
 .tk .btn{background:var(--sun)!important;color:var(--ink)!important}
 /* flotantes */
-.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:104px;height:104px;border-radius:50%;background:#25D366;border:3px solid var(--ink);display:grid;place-items:center;text-decoration:none;box-shadow:4px 4px 0 var(--ink);animation:pu 10s infinite}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:104px;height:104px;border-radius:50%;background:#25D366;border:3px solid var(--ink);display:grid;place-items:center;text-decoration:none;box-shadow:4px 4px 0 var(--ink);animation:pu 15s infinite}
 .wa svg{width:62px;fill:#fff}
 .wa::before{content:"¿Dudas? Escríbenos";position:absolute;right:118px;white-space:nowrap;background:var(--ink);color:#fff;font:700 13px var(--f-b);padding:8px 12px;border-radius:99px;opacity:0;transform:translateX(10px);transition:.9s;pointer-events:none}
 .wa:hover::before,.wa:focus-visible::before{opacity:1;transform:none}
@@ -267,7 +267,7 @@ nav .btn{background:var(--sun)!important;color:var(--ink)!important;font-weight:
 <a class="ln" data-wa="MUESTRA" href="#">Quiero ver una muestra</a>
 </div></section>
 
-<section class="tst"><div class="w"><h2>Lo que <em>nos escriben.</em></h2><div class="car"><div class="cs" id="cs2">
+<section class="tst"><div class="w"><h2>Lo que <em>dicen de nosotros.</em></h2><div class="car"><div class="cs" id="cs2">
 
 <blockquote class="qt">
 <p>El material es excelente, la atención es super rápida, la entrega en tiempo y forma, lo recomiendo ampliamente</p>
@@ -289,7 +289,7 @@ nav .btn{background:var(--sun)!important;color:var(--ink)!important;font-weight:
 </blockquote>
 
 <blockquote class="qt">
-<p>Está muy completo</p>
+<p>Está muy completo y muy bien resumido</p>
 </blockquote>
 
 <blockquote class="qt">
@@ -307,8 +307,8 @@ nav .btn{background:var(--sun)!important;color:var(--ink)!important;font-weight:
 
 </div><div class="cb"><button type="button" id="pv2" aria-label="Anterior">←</button><button type="button" id="nx2" aria-label="Siguiente">→</button></div></div></div></section>
 <section class="faq" id="faq"><div class="w">
-<h2 style="margin-bottom:30px">Preguntas <em>frecuentes</em></h2>
-<details class="f1"><summary>¿Está alineado a la normativa oficial?</summary><div class="fa"><p>Sí. Se fundamenta en normativa federal vigente y en documentos de la SEP; cada protocolo explica en qué se apoya.</p><h4>Leyes</h4><div class="chs"><span class="ch c1">Constitución · Arts. 3° y 4°</span><span class="ch c1">Ley General de Educación · Arts. 73 y 74</span><span class="ch c1">LGDNNA · Derechos de NNA</span><span class="ch c1">Acceso de las Mujeres a una Vida Libre de Violencia</span><span class="ch c1">Ley General de Salud</span></div><h4>Acuerdos SEP</h4><div class="chs"><span class="ch c2">14/12/23 · Erradicación del acoso escolar</span><span class="ch c2">17/05/25 · Violencia sexual en educación básica</span><span class="ch c2">05/04/24 · Consejos Técnicos Escolares</span><span class="ch c2">Acuerdo 705 · Escuela Segura</span></div><h4>Guías y programas</h4><div class="chs"><span class="ch c3">Programa Nacional de Convivencia Escolar</span><span class="ch c3">Eduquemos para la paz</span><span class="ch c3">Entornos Escolares Seguros</span><span class="ch c3">Todas y todos contra el acoso escolar</span><span class="ch c3">Cuidar de otros es cuidar de sí mismo</span><span class="ch c3">CTE Tema 10 · Trabajo con las familias</span><span class="ch c3">Nueva Escuela Mexicana</span><span class="ch c3">Plan de Estudio 2022</span><span class="ch c3">Proceso de Mejora Continua</span><span class="ch c3">Protocolo de acoso escolar CDMX 2024</span><span class="ch c3">Marco de convivencia secundaria CDMX</span></div><h4>Organismos</h4><div class="chs"><span class="ch c4">UNICEF</span><span class="ch c4">UNESCO y ONU Mujeres</span><span class="ch c4">CDHCM · Violencia entre pares</span></div><p class="bib">La bibliografía completa viene al final del manual.</p></div></details>
+<h2 style="margin-bottom:28px">Preguntas <em>frecuentes</em></h2>
+<details class="f1"><summary>¿Está alineado a la normativa oficial?</summary><div class="fa"><p>Sí. Se fundamenta en normativa federal vigente y en documentos de la SEP.</p><h4>Leyes</h4><div class="chs"><span class="ch c1">Constitución · Arts. 3° y 4°</span><span class="ch c1">Ley General de Educación · Arts. 73 y 74</span><span class="ch c1">LGDNNA · Derechos de NNA</span><span class="ch c1">Acceso de las Mujeres a una Vida Libre de Violencia</span><span class="ch c1">Ley General de Salud</span></div><h4>Acuerdos SEP</h4><div class="chs"><span class="ch c2">14/12/23 · Erradicación del acoso escolar</span><span class="ch c2">17/05/25 · Violencia sexual en educación básica</span><span class="ch c2">05/04/24 · Consejos Técnicos Escolares</span><span class="ch c2">Acuerdo 705 · Escuela Segura</span></div><h4>Guías y programas</h4><div class="chs"><span class="ch c3">Programa Nacional de Convivencia Escolar</span><span class="ch c3">Eduquemos para la paz</span><span class="ch c3">Entornos Escolares Seguros</span><span class="ch c3">Todas y todos contra el acoso escolar</span><span class="ch c3">Cuidar de otros es cuidar de sí mismo</span><span class="ch c3">CTE Tema 10 · Trabajo con las familias</span><span class="ch c3">Nueva Escuela Mexicana</span><span class="ch c3">Plan de Estudio 2022</span><span class="ch c3">Proceso de Mejora Continua</span><span class="ch c3">Protocolo de acoso escolar CDMX 2024</span><span class="ch c3">Marco de convivencia secundaria CDMX</span></div><h4>Organismos</h4><div class="chs"><span class="ch c4">UNICEF</span><span class="ch c4">UNESCO y ONU Mujeres</span><span class="ch c4">CDHCM · Violencia entre pares</span></div><p class="bib">La bibliografía completa viene al final del manual.</p></div></details>
 <details class="f2"><summary>¿Para qué nivel y fase es?</summary><div class="fa"><p>Para educación básica: preescolar, primaria y secundaria (fases 3 a 6). Se basa en normativa federal y no incluye normativas específicas de cada estado, así que conviene contrastarlo con las disposiciones de tu entidad y de tu escuela.</p></div></details>
 <details class="f3"><summary>¿Qué protocolos incluye el manual?</summary><div class="fa"><ul><li><b>Convivencia escolar:</b> acoso escolar (bullying), ciberacoso, peleas y discriminación.</li><li><b>Vulneración de derechos de NNA:</b> sospecha de maltrato infantil, negligencia o abandono, violencia familiar y posible abuso sexual.</li><li><b>Salud y seguridad:</b> accidentes, emergencias médicas, alcohol, tabaco o drogas, objetos peligrosos y riesgo de autolesión o ideación suicida (conforme a protocolos institucionales).</li><li><b>Madres, padres y tutores:</b> conflictos, quejas contra docentes, agresiones, negativa a recoger al estudiante y retiro por personas no autorizadas.</li><li><b>Situaciones menores:</b> ausencias reiteradas, incumplimiento del reglamento, daños, pérdida o robo.</li><li><b>Documentación y prevención:</b> cómo registrar incidencias y estrategias de acompañamiento.</li></ul></div></details>
 <details class="f4"><summary>¿En qué mejora respecto al manual anterior?</summary><div class="fa"><ul><li><b>Más situaciones cubiertas:</b> del acoso escolar pasa a protocolos para accidentes, emergencias, familias, ausencias, daños y más.</li><li><b>Pasa de guía a kit:</b> manual, bitácora foliada, formatos para imprimir y 5 formatos editables en Word.</li><li><b>Enfoque práctico:</b> te dice cómo identificar, actuar, registrar y dar seguimiento.</li><li><b>Documentación como pilar:</b> registrar, documentar, formalizar y dar seguimiento.</li><li><b>Más visual:</b> resúmenes y recuadros de apoyo en cada protocolo.</li></ul><p><strong>Antes:</strong> conocimiento. <strong>Ahora:</strong> conocimiento más herramientas para actuar.</p></div></details>
@@ -324,7 +324,7 @@ nav .btn{background:var(--sun)!important;color:var(--ink)!important;font-weight:
 <section class="end"><div class="w">
 <h2>Que el momento difícil no te encuentre <em>sin una guía.</em></h2>
 <a class="btn" data-wa="CIERRE" href="#">Quiero el kit</a>
-<small>Aula 67 · docentes para docentes</small>
+<small>Aula 67</small>
 </div></section>
 </main>
 
