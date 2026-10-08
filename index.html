@@ -417,5 +417,27 @@ const cs=document.getElementById('cs'),st=()=>cs.firstElementChild.offsetWidth+2
 const n=document.getElementById('n');
 new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){o.disconnect();if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;let t0=null;const f=t=>{t0??=t;const p=Math.min((t-t0)/1100,1);n.textContent=Math.round(340-90*p);if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}}).observe(n);
 </script>
+<script>
+document.addEventListener('click', function(e) {
+  const boton = e.target.closest('[data-wa]');
+  
+  if (!boton) return;
+
+  fetch('https://hook.us2.make.com/du1xpszths248i48liwe93wh6bejl8l8', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      prueba: 'CLICK_LANDING',
+      fecha: new Date().toISOString(),
+      url: window.location.href
+    }),
+    keepalive: true
+  });
+
+  console.log('CLICK LANDING ENVIADO A MAKE');
+});
+</script>
 </body>
 </html>
