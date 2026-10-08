@@ -235,37 +235,32 @@ msg=r=>`https://wa.me/${WA}?text=${encodeURIComponent(
 )}`
 </script>
 <script>
-const WEBHOOK='https://hook.us2.make.com/du1xpszths248i48liwe93wh6bejl8l8';
+const LANDING_WEBHOOK = 'https://hook.us2.make.com/du1xpszths248i48liwe93wh6bejl8l8';
+
+function generarIdLanding(){
+  return 'LND-' + Date.now() + '-' + Math.random().toString(36).substring(2,8).toUpperCase();
+}
 
 document.querySelectorAll('[data-wa]').forEach(a=>{
-  a.addEventListener('click', async e=>{
-    e.preventDefault();
+  a.addEventListener('click',()=>{
+    
+    const params = new URLSearchParams(window.location.search);
 
-    const params = new URLSearchParams(location.search);
-
-    const data = new URLSearchParams({
-      landing: 'kit-incidencias',
+    const datos = new URLSearchParams({
+      id: generarIdLanding(),
+      fecha: new Date().toISOString(),
+      origen: 'LANDING',
+      landing: window.location.pathname || '/',
       utm_source: params.get('utm_source') || '',
       utm_medium: params.get('utm_medium') || '',
       utm_campaign: params.get('utm_campaign') || '',
       utm_content: params.get('utm_content') || '',
-      ref: a.dataset.wa || '',
-      page_url: location.href
+      ref: params.get('ref') || '',
+      page_url: window.location.href,
+      estado: 'CLICK_LANDING'
     });
 
-    const wa = msg(a.dataset.wa);
-
-    try{
-      await fetch(`${WEBHOOK}?${data.toString()}`, {
-        method:'GET',
-        mode:'no-cors',
-        keepalive:true
-      });
-    }catch(err){
-      console.warn('No se pudo registrar el clic',err);
-    }
-
-    window.location.href = wa;
+    navigator.sendBeacon(LANDING_WEBHOOK, datos);
   });
 });
 </script>
