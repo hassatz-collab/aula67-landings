@@ -242,7 +242,7 @@ function generarIdLanding(){
 }
 
 document.querySelectorAll('[data-wa]').forEach(a=>{
-  a.addEventListener('click',()=>{
+  a.addEventListener('click', function(){
     
     const params = new URLSearchParams(window.location.search);
 
@@ -260,7 +260,12 @@ document.querySelectorAll('[data-wa]').forEach(a=>{
       estado: 'CLICK_LANDING'
     });
 
-    navigator.sendBeacon(LANDING_WEBHOOK, datos);
+    fetch(LANDING_WEBHOOK, {
+      method: 'POST',
+      body: datos,
+      keepalive: true
+    });
+    
   });
 });
 </script>
