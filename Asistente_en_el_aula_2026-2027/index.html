@@ -199,13 +199,10 @@ footer{background:#1B2433;color:#C7CEDA;font-size:14px;padding:30px 0 90px}
 <blockquote>Excelente trabajo</blockquote>
 </div></section>
 
-```html
 <section class="alt faq" id="faq">
   <div class="w">
 
     <h2 style="margin-bottom:22px">Preguntas frecuentes</h2>
-
-    <h3>Compra y entrega</h3>
 
     <details>
       <summary>¿Qué versión me corresponde?</summary>
@@ -238,8 +235,6 @@ footer{background:#1B2433;color:#C7CEDA;font-size:14px;padding:30px 0 90px}
       <p>¡Claro! Cada versión cuenta con un demo gratuito con cinco estudiantes y datos de ejemplo para que conozcas su funcionamiento antes de decidir.</p>
     </details>
 
-    <h3>Compatibilidad y funcionamiento</h3>
-
     <details>
       <summary>¿Necesito instalar algún programa?</summary>
       <p>No. Es un archivo de Excel (.xlsx). No necesitas instalar aplicaciones adicionales.</p>
@@ -265,8 +260,6 @@ footer{background:#1B2433;color:#C7CEDA;font-size:14px;padding:30px 0 90px}
       <p>No. Los datos se registran en las hojas correspondientes y se reflejan automáticamente en los concentrados, calificaciones y reportes.</p>
     </details>
 
-    <h3>Personalización y características</h3>
-
     <details>
       <summary>¿Puedo adaptar los criterios de evaluación?</summary>
       <p>Sí. Puedes modificar los criterios, porcentajes y otros parámetros disponibles en la configuración del sistema, según las características de cada versión.</p>
@@ -286,8 +279,6 @@ footer{background:#1B2433;color:#C7CEDA;font-size:14px;padding:30px 0 90px}
       <summary>¿La boleta es oficial?</summary>
       <p>No. Las boletas, cartas y reportes son herramientas informativas para facilitar el seguimiento de los estudiantes. No sustituyen los formatos oficiales que solicite tu autoridad educativa o institución.</p>
     </details>
-
-    <h3>Acompañamiento y actualizaciones</h3>
 
     <details>
       <summary>¿Incluye soporte y actualizaciones?</summary>
@@ -317,7 +308,7 @@ const DEMOS={primaria:'https://docs.google.com/spreadsheets/d/1V-DxR6y2Sn1lSBKX2
 tele:'https://docs.google.com/spreadsheets/d/1koB1YBP5fShye_jW1pdiiGq6uv49TI00/edit?usp=drive_link&ouid=102631290175799619003&rtpof=true&sd=true',
 secu:'https://docs.google.com/spreadsheets/d/1uQCL7DkLvzbLC3ppl_r3clihzNa3YcTY/edit?usp=drive_link&ouid=102631290175799619003&rtpof=true&sd=true'};
 /* Pega aquí el link de YouTube o TikTok de cada versión (vacío = "Próximamente") */
-const VIDEOS=[{t:'Primaria',url:''},{t:'Telesecundaria',url:''},{t:'Secundaria, prepa y universidad',url:''}];
+const VIDEOS=[{t:'Primaria',url:''},{t:'Telesecundaria',url:''},{t:'Secundaria, prepa y universidad',url:'https://www.tiktok.com/@aula.67.mexico/video/7703783510200585492?is_from_webapp=1&sender_device=pc&web_id=7696026631303710214'}];
 /* ======================= */
 const wa=k=>`https://wa.me/${WA}?text=`+encodeURIComponent(k==='general'?'Hola, quiero información sobre "Tu asistente en el aula" 2026-2027.':'Hola, me interesa "Tu asistente en el aula" 2026-2027, versión '+k+'. ¿Cómo puedo obtenerlo?');
 document.querySelectorAll('[data-wa]').forEach(a=>{a.href=wa(a.dataset.wa);a.target='_blank';a.rel='noopener'});
